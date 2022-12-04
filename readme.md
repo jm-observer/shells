@@ -1,0 +1,1 @@
+curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/jm-observer/shells/main/wsl/init.sh | bash
