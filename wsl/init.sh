@@ -14,6 +14,9 @@ sed -i '$a\bindkey "?" autosuggest-accept' ~/.zshrc
 
 # source ~/.zshrc
 
+git config --global credential.helper store
+ssh-keygen -t rsa -f /root/.ssh/id_rsa -P ''
+
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 source "$HOME/.cargo/env"
 cargo install crm
