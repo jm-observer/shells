@@ -10,7 +10,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.oh-my-zsh/plug
 git clone https://github.com/unixorn/fzf-zsh-plugin.git ~/.oh-my-zsh/plugins/fzf-zsh-plugin
 sed -i 's/(git/(git zsh-autosuggestions fzf-zsh-plugin/' ~/.zshrc
 sed -i 's/ZSH_THEME=".*"/ZSH_THEME="daveverwer"/' ~/.zshrc
-sed -i '$a\bindkey "?" autosuggest-accept' ~/.zshrc
+sed -i '$a\bindkey "^[/" autosuggest-accept' ~/.zshrc
 
 # source ~/.zshrc
 
